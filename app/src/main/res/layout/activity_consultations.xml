@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Consultations">
+
+    <EditText
+        android:id="@+id/txtFindPosition"
+        android:layout_width="301dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Escriba el cargo a buscar"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPay" />
+
+    <Button
+        android:id="@+id/btnYoung"
+        android:layout_width="305dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:text="Empleado más joven"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnOld"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="EMPLEADO MÁS ADULTO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnYoung" />
+
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="305dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:text="Salario más alto, bajo y el promedio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOld" />
+
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="305dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="108dp"
+        android:text="Lista de personas por cargo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPay" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="319dp"
+        android:layout_height="234dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnList" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
